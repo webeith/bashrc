@@ -25,3 +25,6 @@ alias gibd='for k in `git branch|sed s/^..//`;do echo -e `git log -1 --pretty=fo
 alias gihist="git log --pretty=tformat:'%ad %Cgreen%s %Cblue%an %Cred%d%Creset' --graph --date=short"
 # показывает что изменялось в последнем коммите
 alias gistat="git log --stat --no-merges --max-count=1"
+# запостить на пастебин - install pastebinit
+alias out='pastebinit -a webeith -b http://pastebin.com -f text | xclip -i'
+alias outp='pastebinit -a webeith -b http://pastebin.com -f php | xclip -i'
